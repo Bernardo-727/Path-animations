@@ -4,9 +4,9 @@
 
 I decided to do something in 3D,just so i can create some comfort with
 it early, and i decided to go with the rgl package ,then stumbled into
-the functions rgl has for animations and i had this idea, why not create
+the functions rgl has for animations and i had this idea: "why not create
 an animation for a [lorenz
-attractor](https://en.wikipedia.org/wiki/Lorenz_system) ?
+attractor](https://en.wikipedia.org/wiki/Lorenz_system)?"
 
 It is a dynamical system that’s really often used when talking about
 chaos theory and the butterfly effect (because if you use certain
@@ -17,9 +17,9 @@ parameters and look in a certain angle it takes a butterfly shape)
 # Lorenz system
 
 I don’t want to go too into detail on this, because my focus is on the
-animation paths partd.
+animation paths part.
 
-it follows this system of equations
+it follows this system of equations:
 
 $$
 \Large \frac{dx}{dt}=\sigma(y-x),
@@ -27,7 +27,7 @@ $$
 \frac{dz}{dt}=xy-\beta z
 $$
 
-And these were the initial conditions used
+And these were the initial conditions used:
 
 $$
 \Large \Delta t = 0.0001,t_{final}=70,\rho=28,\sigma=10,\beta=\frac{8}{3}
@@ -46,13 +46,13 @@ You may have noticed that if each step is 0.0001 time units, and it
 takes 70 time units of simulation, the resulting dataframe of
 coordinates should be 700001 collumns tall, but i actually cut so it
 only returns a “new” dataframe with the positions every 200 collumns of
-the old one.
+the old one. (because honestly, no one would want to be working with a variable that big)
 
 # Setting rgl parameters
 
-Honestly i’m still a bit lost on them, i feel like i could use spin3d
+Honestly i’m still a bit lost on how they work, i feel like i could use spin3d
 here somewhere but i didn’t fully understand how i could do that while
-my path animation worked at the same time.
+my path animation works at the same time.
 
 - viewport and windowRect
   - this just resizes the window for the animation to be the proportion
